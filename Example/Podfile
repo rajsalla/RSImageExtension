@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RSImageExtension_Example' do
+  pod 'RSImageExtension', :path => '../'
+
+  target 'RSImageExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
