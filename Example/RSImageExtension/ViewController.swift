@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import RSImageExtension
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var exImageView: UIImageView!
+  override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    
+    exImageView.circleImageView(borderColor: UIColor.white, borderWidth: 2.0)
+    
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0BE644ED49D625E2FBA2152B0AAE48EC /* Pods-RSImageExtension_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1701495B45CA76A6586886D47EF2D533 /* Pods-RSImageExtension_Tests-dummy.m */; };
-		25924D1F5E2F236A63562845C561DA0A /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63D37517EB41B22CC305260F244C85E /* ReplaceMe.swift */; };
 		332AB2CAC5A4BC733C1B5C9771053914 /* RSImageExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD6CA8D854BFAA46733918797F9613C /* RSImageExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		457D07858EA8498DB9375EABF0CE71C7 /* Pods-RSImageExtension_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A94C67C260C7CB0BFDDAAAC96DCE2B1D /* Pods-RSImageExtension_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50A5D714EC322F7F363B8FCF0EBDBD57 /* Pods-RSImageExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C9E215E061B3C909C545FC734216A7B /* Pods-RSImageExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,6 +16,7 @@
 		C6BC7F3291493CFF2B90437A9B61C4E3 /* Pods-RSImageExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B56D80873EC2FADA52A053CE388191E /* Pods-RSImageExtension_Example-dummy.m */; };
 		D7AD3C575336EBBAA1732FBF7D3640FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		D94C80A2D4998147DBF81D7B486B2BC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E80921D7213E82DD0094D66E /* RSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80921D6213E82DD0094D66E /* RSImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +68,8 @@
 		BDFE804EA26414E9835EEBB51B94011A /* Pods-RSImageExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSImageExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C022C7FD49ED4DD8E180D53BDF79DCD8 /* Pods-RSImageExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RSImageExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D11EFB0848BBCA64059A33C18646185F /* RSImageExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSImageExtension-dummy.m"; sourceTree = "<group>"; };
-		D63D37517EB41B22CC305260F244C85E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = RSImageExtension/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		DF87B13AE8649C6EA8B92791AF4B0DAB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80921D6213E82DD0094D66E /* RSImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSImageExtension.swift; sourceTree = "<group>"; };
 		EBBC492268D8B7B00862E0079795AFAC /* RSImageExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSImageExtension.xcconfig; sourceTree = "<group>"; };
 		EDEEA50BBFC7F21D37F15E23F9EE2F7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,9 +147,9 @@
 		3B7056A74B1C3A87B6DEF318D867319E /* RSImageExtension */ = {
 			isa = PBXGroup;
 			children = (
-				D63D37517EB41B22CC305260F244C85E /* ReplaceMe.swift */,
 				31A5BDD53B1BE1FF4E7B121D0C263695 /* Pod */,
 				17A3CDEF40B5D5797AFA8EC8C0480322 /* Support Files */,
+				E80921D6213E82DD0094D66E /* RSImageExtension.swift */,
 			);
 			name = RSImageExtension;
 			path = ../..;
@@ -318,6 +318,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					06156CF6F8E42AFF4B3085736A9731EA = {
+						LastSwiftMigration = 0920;
+					};
+					F6773039F1B1094CBF7D821D026D5853 = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -351,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25924D1F5E2F236A63562845C561DA0A /* ReplaceMe.swift in Sources */,
+				E80921D7213E82DD0094D66E /* RSImageExtension.swift in Sources */,
 				68CA3514975C205203B1CA43C08D48D8 /* RSImageExtension-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +395,7 @@
 			baseConfigurationReference = 8C3595E26D1E6F22EBE6E78A401B1BBC /* Pods-RSImageExtension_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -410,6 +419,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -421,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBBC492268D8B7B00862E0079795AFAC /* RSImageExtension.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -643,6 +654,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBBC492268D8B7B00862E0079795AFAC /* RSImageExtension.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -676,6 +688,7 @@
 			baseConfigurationReference = 6E9509AA731DC0C01F8F8515C6458A2B /* Pods-RSImageExtension_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -700,6 +713,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
