@@ -1,0 +1,6 @@
+framework module RSImageExtension {
+  umbrella header "RSImageExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - RSImageExtension (0.1.0)
+
+DEPENDENCIES:
+  - RSImageExtension (from `../`)
+
+EXTERNAL SOURCES:
+  RSImageExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RSImageExtension: ad00ba5f8c0607aba07708b64c52a0a05f52508a
+
+PODFILE CHECKSUM: 30c97498d01c0da8f11074806d11210090cae1c6
+
+COCOAPODS: 1.5.3
